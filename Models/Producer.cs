@@ -11,4 +11,3 @@ namespace ECommerce_Application.Models
         public string Bio { get; set; }
     }
 }
-}

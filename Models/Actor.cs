@@ -9,5 +9,8 @@ namespace ECommerce_Application.Models
         public string ProfilePictureURL { get; set; }
         public string Name { get; set; }
         public string Bio { get; set; }
+
+        // Relationship
+        public List<Actor_Movie> Actors_Movies { get; set; }
     }
 }
