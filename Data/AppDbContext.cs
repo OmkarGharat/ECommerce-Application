@@ -1,6 +1,6 @@
 ﻿using ECommerce_Application.Models;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using ECommerce_Application.Data;
 
 namespace ECommerce_Application.Data
 {
