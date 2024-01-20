@@ -11,6 +11,6 @@ namespace ECommerce_Application.Models
         public string Bio { get; set; }
 
         // Relationship
-        public List<Actor_Movie> Actors_Movies { get; set; }
+        public List<Actor_Movie> Actors_Movies { get; set; } = new List<Actor_Movie>();
     }
 }
