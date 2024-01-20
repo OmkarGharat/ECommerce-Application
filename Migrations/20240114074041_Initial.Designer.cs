@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ECommerce_Application.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240113095042_Initial")]
+    [Migration("20240114074041_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -108,11 +108,7 @@ namespace ECommerce_Application.Migrations
                     b.Property<DateTime>("EndDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("ImageURl")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Logo")
+                    b.Property<string>("ImageURL")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
