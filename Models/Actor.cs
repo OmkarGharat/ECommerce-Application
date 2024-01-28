@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace ECommerce_Application.Models
 {
@@ -6,8 +7,14 @@ namespace ECommerce_Application.Models
     {
         [Key]
         public int Id { get; set; }
+        [DisplayName("Profile Picture")]
+        [Required(ErrorMessage = "Profile Picture is required")]
         public string ProfilePictureURL { get; set; }
+        [DisplayName("Actor Name")]
+        [Required(ErrorMessage = "Actor Name is required")]
         public string Name { get; set; }
+        [DisplayName("About Actor")]
+        [Required(ErrorMessage = "About info is required")]
         public string Bio { get; set; }
 
         // Relationship
